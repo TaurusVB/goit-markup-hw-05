@@ -43,7 +43,16 @@
         <!-- Hero -->
         <section class="hero">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="button primary">Замовити послугу</button>
+            <button type="button" class="button primary" data-modal-open>Замовити послугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="close-modal" data-modal-close>
+                        <svg wight="20px" height="20px" class="icon-close">
+                            <use href="./images/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </section>
 
         <!-- Приклади робіт -->
@@ -97,9 +106,15 @@
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="services list photo">
-                    <li class="item"><img src="./images/wemake1.jpg" alt="Написання коду" width="370"></li>
-                    <li class="item"><img src="./images/wemake2.jpg" alt="Кросплатформеність" width="370"></li>
-                    <li class="item"><img src="./images/wemake3.jpg" alt="Різноманітність" width="370"></li>
+                    <li class="item">
+                        <img src="./images/wemake1.jpg" alt="Написання коду" width="370">
+                        <p class="services-text">Десктопні додатки</p></li>
+                    <li class="item">
+                        <img src="./images/wemake2.jpg" alt="Кросплатформеність" width="370">
+                        <p class="services-text">Мобільні додатки</p></li>
+                    <li class="item">
+                        <img src="./images/wemake3.jpg" alt="Різноманітність" width="370">
+                        <p class="services-text">Дизайнерські рішення</p></li>
                 </ul>
             </div>
         </section>
@@ -337,5 +352,6 @@
         </div>
     </footer>
     
+    <script src="./js/modal.js"></script>
 </body>
 </html>
